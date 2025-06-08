@@ -1,0 +1,50 @@
+#!/bin/bash 
+sum=0; 
+i="y" 
+echo "Enter one Number" 
+read n1 
+echo "Enter Second Number" 
+read n2 
+while [ 1 ] 
+do 
+echo "1. Addition"
+echo "2. Substraction" 
+echo "3. Multiplication" 
+echo "4. Division" 
+echo "Enter your Choice" 
+read ch 
+case $ch in 
+1) sum=` expr $n1 + $n2 ` 
+echo "Sum="$sum;; 
+2) sum=` expr $n1 - $n2 ` 
+echo "Sub="$sum;; 
+3) sum=` expr $n1 \* $n2 ` 
+echo "Multi="$sum;; 
+4) sum=` expr $n1 / $n2 ` 
+echo "div="$sum;; 
+*) echo "invalid option";; 
+esac 
+echo "To exit press 0 else press 1" 
+read i 
+if [ $i -eq 0 ] 
+then 
+exit 
+fi 
+done
+
+
+OUTPUT 
+bash 5 
+Enter one Number 
+4 
+Enter Second Number 
+2 
+1. Addition 
+2. Substraction 
+3. Multiplication 
+4. Division 
+Enter your Choice
+4 
+div=2 
+To exit press 0 else press 1 
+0

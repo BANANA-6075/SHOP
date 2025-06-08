@@ -4,6 +4,7 @@ read a
 read b
 echo "Sum: $((a + b))"
 
+
 #Output:
 Enter two numbers:
 5

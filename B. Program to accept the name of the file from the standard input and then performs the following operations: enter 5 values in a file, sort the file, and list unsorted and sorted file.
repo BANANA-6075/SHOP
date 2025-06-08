@@ -1,0 +1,34 @@
+#!/bin/bash
+echo "Enter file name:"
+read filename
+echo "Enter 5 values:" > "$filename"
+for i in {1..5}; do
+  read val
+  echo "$val" >> "$filename"
+done
+echo "Unsorted file content:"
+cat "$filename"
+echo "Sorted file content:"
+sort -n "$filename"
+
+#Output:
+Enter file name:
+data.txt
+Enter 5 values:
+3
+5
+1
+9
+7
+Unsorted file content:
+3
+5
+1
+9
+7
+Sorted file content:
+1
+3
+5
+7
+9

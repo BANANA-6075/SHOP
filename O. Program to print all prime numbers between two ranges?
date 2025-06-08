@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "Enter start and end range:"
+read start end
+for ((i=start;i<=end;i++)); do
+  if [ $i -lt 2 ]; then
+    continue
+  fi
+  prime=1
+  for ((j=2;j*j<=i;j++)); do
+    if (( i % j == 0 )); then
+      prime=0
+      break
+    fi
+  done
+  ((prime)) && echo $i
+done
+
+
+# Output:
+Enter start and end range:
+10 20
+11
+13
+17
+19

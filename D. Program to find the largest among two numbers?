@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Enter two numbers:"
+read a
+read b
+if [ $a -gt $b ]; then
+  echo "Largest: $a"
+else
+  echo "Largest: $b"
+fi
+
+
+# Output:
+Enter two numbers:
+5
+10
+Largest: 10

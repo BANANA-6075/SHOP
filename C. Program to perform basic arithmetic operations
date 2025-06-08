@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Enter two numbers:"
+read a
+read b
+echo "Addition: $((a + b))"
+echo "Subtraction: $((a - b))"
+echo "Multiplication: $((a * b))"
+echo "Division: $((a / b))"
+
+
+# Output:
+Enter two numbers:
+10
+2
+Addition: 12
+Subtraction: 8
+Multiplication: 20
+Division: 5

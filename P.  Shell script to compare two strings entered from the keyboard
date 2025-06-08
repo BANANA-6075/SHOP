@@ -1,0 +1,20 @@
+#!/bin/bash 
+echo "Enter String 1" 
+read nam1 
+echo "Enter String 2" 
+read nam2 
+if [ "$nam1" == "$nam2" ]; 
+then 
+echo "Equal" 
+else 
+echo "NOT Equal" 
+fi 
+
+
+OUTPUT 
+bash 1 
+Enter String 1 
+manu 
+Enter String 2 
+manu 
+Equal

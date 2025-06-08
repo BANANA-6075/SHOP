@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Enter register number:"
+read reg
+echo "Enter name:"
+read name
+echo "Enter 4 subject marks:"
+read m1 m2 m3 m4
+if [ $m1 -ge 35 ] && [ $m2 -ge 35 ] && [ $m3 -ge 35 ] && [ $m4 -ge 35 ]; then
+  echo "$name ($reg) Passed"
+else
+  echo "$name ($reg) Failed"
+fi
+
+# Output:
+Enter register number:
+123
+Enter name:
+Alex
+Enter 4 subject marks:
+60 70 30 80
+Alex (123) Failed
